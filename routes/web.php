@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//adicionando rota para a pagina 'ola.blade.php'
 Route::get('/ola', function(){
   return view('ola');
 });
+
+
+//adicionando rota para primeiro controller
+Route::get('/cursos', 'CursosController@index');
